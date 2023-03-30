@@ -21,12 +21,12 @@ public class MovieService {
     }
 
     public Movie getMovieByName(String name) {
-        List<Movie> directors = MovieRepository.getAllMovies();
+        List<Movie> movies = MovieRepository.getAllMovies();
 
-        if (directors != null) {
-            for (Movie director: directors) {
-                if (director.getName().equals(name)) {
-                    return director;
+        if (movies != null) {
+            for (Movie movie: movies) {
+                if (movie.getName().equals(name)) {
+                    return movie;
                 }
             }
         }
